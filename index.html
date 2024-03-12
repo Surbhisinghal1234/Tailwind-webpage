@@ -5,55 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville&family=Poppins&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- <div class="bg-red-800">hello</div> -->
-    <!-- NAVBAR  -->
-    <nav
-      class=" flex justify-between  items-center w-full h-14 px-16  "
-    >
-<!-- <div class=" container m-auto "> -->
-
+    <!-- ********************
+    ********NAVBAR***********
+    ********************* -->
+    <nav class=" flex justify-between  items-center w-full h-14 px-[2rem] md:px-[6rem]">
       <div>
         <h5 class="font-bold text-xs py-[4.5px] px-[2px] border-solid border-2 border-black">
           <span class="bg-red-950 text-white px-2 py-[3px] me-3">SITE</span>LOGO
         </h5>
       </div>
-      <div class="flex gap-10 items-center">
-        <ul class="md:flex gap-10 hidden font-bold">
+      <div class="flex md:gap-6 lg:gap-10 items-center">
+        <ul class="md:flex md:gap-6 lg:gap-10 hidden font-bold">
           <li class="cursor-pointer">Service</li>
           <li class="cursor-pointer">Apply for Jobs</li>
           <li class="cursor-pointer">Contact Us</li>
         </ul>
-        <button class="hidden md:block bg-blue-800 text-white py-1 px-3 rounded font-bold cursor-pointer">Hire Developers</button>
+        <button class="hidden md:block bg-blue-800 text-white py-1 px-3 rounded font-bold cursor-pointer hover:bg-blue-500 duration-500 hover:text-gray-200">Hire Developers</button>
         <div class="md:hidden ">
             <a href="" class=" text-4xl">&#8801</a>
         </div>
       </div>
-<!-- </div> -->
-
     </nav>
 
-    <!-- NAVBAR END  -->
-
-    <!-- HERO SECTION  -->
+<!-- ************************
+    ****** HERO SECTION******  
+    ************************** -->
 <!-- <div class="container m-auto mt-8"> -->
-   <div class=" h-auto flex items-center justify-between flex-col md:flex-row px-16">
-    <div class=" ">
-        <h1 class="text-5xl font-bold">The right developers for your project.
+   <div class=" h-auto flex items-center justify-between flex-col sm:flex-row px-[2rem] md:px-[6rem] my-[4rem] mt-[2rem]">
+    <div class="text-center sm:text-left lg:w-[35rem] md:w-[44rem] sm:w-[30rem]">
+        <h1 class="text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ">The right developers for your project.
         </h1>
-            <p class="py-8 text-gray-600">Codebase is an outsourcing staffing solution that can integrate with your team to help you create, design and scale on time and on budget.</p>
-            <button class=" text-xl cursor-pointer bg-blue-800 text-white py-1 px-3 rounded font-bold">Hire Developers</button>
-       
+            <p class="text-justify py-8 text-gray-600">Codebase is an outsourcing staffing solution that can integrate with your team to help you create, design and scale on time and on budget.</p>
+            <button class="hover:bg-blue-500 duration-500 hover:text-gray-200 text-xl cursor-pointer bg-blue-800 text-white py-1 px-3 rounded font-bold">Hire Developers</button>
     </div>
-
     <div class="mt-10 md:mt-0">
-
-   
-    <img class=" hidden md:block " src="./images/heroImage.webp" alt="" srcset="">
-    <img class="md:hidden" src="https://tailwindtemplates.co/_next/image?url=https%3A%2F%2Fapi.tailwindtemplates.co%2Fpublic%2Ffile%2Fplain-tw.jpg&w=1920&q=100" alt="">
+    <img class=" hidden sm:block " src="./images/heroImage.webp" alt="" srcset="">
+    <img class="sm:hidden" src="https://tailwindtemplates.co/_next/image?url=https%3A%2F%2Fapi.tailwindtemplates.co%2Fpublic%2Ffile%2Fplain-tw.jpg&w=1920&q=100" alt="">
 </div>
    </div>
+
 <!-- </div> -->
+<!-- ********************
+******OUR TRAINERS*******
+********************** -->
+<div class="h-auto w-100 flex flex-col  md:px-[6rem] px-[2rem] my-[3rem] ">
+  <div class="text-center xl:w-1/3 md:w-2/3 m-auto sm:w-2/3">
+    <h1 class="font-semibold text-4xl">MEET OUR TRAINERS</h1>
+    <p class="mt-3">Our trainers are here to dedicate the time and effort that you need to get in the best shape of your life </p>
+
+  </div>
+  <div class="flex flex-col sm:flex-row items-center justify-between mt-[3rem] gap-y-8 sm:gap-y-0 sm:gap-x-6">
+    <div>
+      <img class="w-96 lg:w-96 md:w-72 rounded-md hover:-translate-1 hover:scale-105 duration-700"
+      
+       src="./images/trainer-1.avif" alt="">
+      <div class="text-center mt-3">
+        <h2 class="font-bold text-xl">Trainer</h2>
+        <p >Lorem ipsum</p>
+      </div>
+    </div>
+    <div>
+      <img class="w-96 lg:w-96 md:w-72 rounded-md hover:-translate-1 hover:scale-105 duration-700" src="./images/trainer-2.avif" alt="">
+      <div class="text-center mt-3">
+        <h2 class="font-bold text-xl">Trainer</h2>
+        <p class="">Lorem ipsum</p>
+      </div>
+    </div>
+    <div class=" ">
+      <img class="w-96 lg:w-96 md:w-72 rounded-md hover:-translate-1 hover:scale-105 duration-700" src="./images/trainer-3.avif" alt="">
+      <div class="mt-3 text-center">
+        <h2 class="font-bold text-xl">Trainer</h2>
+        <p>Lorem ipsum</p>
+      </div>
+    </div>
+  </div>
+
+</div>
   </body>
 </html>
